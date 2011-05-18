@@ -8,6 +8,8 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+color evening
+
 set diffexpr=MyDiff()
 function MyDiff()
   let opt = '-a --binary '
