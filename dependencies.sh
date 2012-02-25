@@ -35,3 +35,12 @@ cd demos
 make
 
 git clone git://people.freedesktop.org/~mareko/libtxc_dxtn
+To force the use of gallium llvmpipe software render:
+$ LIBGL_ALWAYS_SOFTWARE=1 glxgears -info
+To force the use of old non-gallium software render:
+$ LIBGL_ALWAYS_SOFTWARE=1 LIBGL_DRIVERS_PATH=/usr/lib/dri-alternates glxgears -info
+To force the use of old non-gallium r300/r600 radeon drivers:
+$ LIBGL_DRIVERS_PATH=/usr/lib/dri-alternates glxgears -info
+To force the use of gallium i915 driver:
+$ LIBGL_DRIVERS_PATH=/usr/lib/dri-alternates glxgears -info
+
