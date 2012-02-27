@@ -15,7 +15,7 @@ sudo make install
 cd ..
 git clone git://anongit.freedesktop.org/git/mesa/mesa
 cd mesa
-./autogen.sh --prefix=/usr/local/xorg --with-dri-drivers="swrast" --with-gallium-drivers="r600,swrast" --enable-debug
+./autogen.sh --prefix=/usr/local/xorg --with-dri-drivers="swrast" --with-gallium-drivers="r600,swrast" --enable-debug CFLAGS=-O0 CXXFLAGS=-O0
 make
 sudo make install
 cd ..
